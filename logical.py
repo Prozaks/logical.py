@@ -4,6 +4,8 @@ print('''********************
 2. Subtraction
 3. Multiplication
 4. Division
+5. Exponential
+6. Floor division
 **************************''')
 
 # ADDITION
@@ -39,6 +41,12 @@ print("Enter two numbers to exp")
 first_number = float(input("first Number: "))
 second_number = float(input("second Number: "))
 sum = first_number ** second_number
-print(f"{first_number:.2f} ** {second_number:.2f}: {sum}:.22f")
+print(f"{first_number:.2f} ** {second_number:.2f}: {sum:.2f}")
 
+# FLOOR DIVISION
+print("Enter two numbers to floor div")
+first_number = float(input("first Number: "))
+second_number = float(input("second Number: "))
+sum = first_number // second_number
+print(f"{first_number:.2f} // {second_number:.2f}: {sum:.2f}")
 
