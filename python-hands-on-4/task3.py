@@ -1,0 +1,23 @@
+"""
+Task 3: Hotel Room Allocation
+Hill View Hotel tracked room occupancy as follows:
+
+rooms = {"101": "Alice", "102": "Bob", "103": "Charlie"}
+
+During the evening:
+- A new guest "Daisy" was checked into room 104.
+- Room 102 was vacated after Bob checked out.
+- A last-minute cancellation happened for the most recently allocated room just after the manager backed up the current allocation.
+"""
+
+rooms = {"101": "Alice", "102": "Bob", "103": "Charlie"}
+new_rooms = {"104": "Daisy"}
+rooms.update(new_rooms)
+print("A new guest Daisy was updated into room 104", rooms)
+
+rooms.pop("102")
+print("Room 102 was vacated and the room was removed from dictionary", rooms)
+
+rooms.pop("104")
+print("There was cancellation on the new room allocated and the room was removed from dictionary", rooms)
+
